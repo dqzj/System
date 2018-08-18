@@ -1,0 +1,10 @@
+memory:guest=256,host=128
+romimage:file=$BXSHARE/BIOS-bochs-latest
+vgaromimage:file=$BXSHARE/VGABIOS-lgpl-latest
+floppya:1_44=boot.img,status=inserted
+ata0:enabled=1,ioaddr1=0x1f0,ioaddr2=0x3f0,irq=14
+ata0-master:type=none
+boot:floppy
+log:bochslog.txt
+mouse:enabled=0
+keyboard:type=mf,serial_delay=250
